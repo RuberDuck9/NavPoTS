@@ -511,148 +511,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_02x04_Top_Bottom"
 			(pin_names
 				(offset 1.016)
@@ -6702,12 +6560,20 @@
 		(uuid "14b8d985-49ee-4f2f-8758-3a8bd61985d7")
 	)
 	(no_connect
+		(at 284.48 307.34)
+		(uuid "14d7b2b0-a16f-446b-809a-c7c5aa8aa1e7")
+	)
+	(no_connect
 		(at 284.48 281.94)
 		(uuid "1730c50f-950a-477e-9020-243d82fffdcb")
 	)
 	(no_connect
 		(at 247.65 60.96)
 		(uuid "24c27e77-d652-4a2b-aa1e-a82b0ff2c80f")
+	)
+	(no_connect
+		(at 284.48 251.46)
+		(uuid "28bfca3c-ff43-46d5-89d3-0c3f38533b68")
 	)
 	(no_connect
 		(at 284.48 241.3)
@@ -6730,6 +6596,10 @@
 		(uuid "68fda5e3-6fc3-4b12-8389-c2e14e4c7c7e")
 	)
 	(no_connect
+		(at 284.48 259.08)
+		(uuid "6e202002-a37f-4d96-9ca3-902b42c81cad")
+	)
+	(no_connect
 		(at 224.79 171.45)
 		(uuid "725e958a-5744-4421-9b8d-e92a832bfac6")
 	)
@@ -6744,6 +6614,10 @@
 	(no_connect
 		(at 284.48 297.18)
 		(uuid "890e072b-e45a-4a4f-ba23-cabafce91959")
+	)
+	(no_connect
+		(at 284.48 254)
+		(uuid "e401c828-d6ca-4f7b-a1ee-bf1b4f72d0b2")
 	)
 	(no_connect
 		(at 284.48 256.54)
@@ -6799,16 +6673,6 @@
 	)
 	(wire
 		(pts
-			(xy 448.31 36.83) (xy 429.26 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01998bcf-c3dc-4a19-8f03-d2c513805d6c")
-	)
-	(wire
-		(pts
 			(xy 209.55 76.2) (xy 222.25 76.2)
 		)
 		(stroke
@@ -6836,16 +6700,6 @@
 			(type default)
 		)
 		(uuid "03e3764c-310b-426c-92e9-85dac28fc2ed")
-	)
-	(wire
-		(pts
-			(xy 447.04 91.44) (xy 448.31 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03e6a124-1a02-4ec2-b53f-ca08cc4a3eb3")
 	)
 	(wire
 		(pts
@@ -6976,16 +6830,6 @@
 			(type default)
 		)
 		(uuid "095246c3-3fed-41e5-b797-110ed83ae3a0")
-	)
-	(wire
-		(pts
-			(xy 368.3 92.71) (xy 368.3 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "095c7cb9-5f85-4e63-a17d-386da5f3489f")
 	)
 	(wire
 		(pts
@@ -7429,16 +7273,6 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 100.33) (xy 421.64 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22e2c68e-4b69-463f-9c42-f8e9fd860643")
-	)
-	(wire
-		(pts
 			(xy 40.64 60.96) (xy 49.53 60.96)
 		)
 		(stroke
@@ -7649,16 +7483,6 @@
 	)
 	(wire
 		(pts
-			(xy 386.08 90.17) (xy 387.35 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e5750fb-51d3-42eb-bfd9-66f80ab5dbed")
-	)
-	(wire
-		(pts
 			(xy 246.38 114.3) (xy 256.54 114.3)
 		)
 		(stroke
@@ -7706,16 +7530,6 @@
 			(type default)
 		)
 		(uuid "32d74dea-0600-42e2-af37-f2c0dfb4e4a0")
-	)
-	(wire
-		(pts
-			(xy 359.41 99.06) (xy 360.68 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "333c1ea3-b133-4d23-a89a-e0ae5bf570b2")
 	)
 	(wire
 		(pts
@@ -7776,16 +7590,6 @@
 			(type default)
 		)
 		(uuid "358d15f6-5d7c-4ca5-9d9f-51c3930eecf1")
-	)
-	(wire
-		(pts
-			(xy 429.26 93.98) (xy 448.31 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3659ddf1-db99-4f8f-96bc-185e1b1f9bce")
 	)
 	(wire
 		(pts
@@ -7876,16 +7680,6 @@
 			(type default)
 		)
 		(uuid "39e071a2-9df4-4d42-8657-295329794f68")
-	)
-	(wire
-		(pts
-			(xy 368.3 104.14) (xy 368.3 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a5af181-11a4-4fde-aa69-8d6af42cd71f")
 	)
 	(wire
 		(pts
@@ -8056,16 +7850,6 @@
 			(type default)
 		)
 		(uuid "4384dc52-7a3c-4f37-856e-dfced204f5fb")
-	)
-	(wire
-		(pts
-			(xy 420.37 43.18) (xy 421.64 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43db583e-a236-443a-b24b-892a5e55d92b")
 	)
 	(wire
 		(pts
@@ -8369,16 +8153,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 259.08) (xy 284.48 259.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5840aed5-1474-45e0-a1b7-37055a9fe5f0")
-	)
-	(wire
-		(pts
 			(xy 281.94 327.66) (xy 284.48 327.66)
 		)
 		(stroke
@@ -8616,16 +8390,6 @@
 			(type default)
 		)
 		(uuid "65944f34-aa47-463d-9ba7-054d3c2e2854")
-	)
-	(wire
-		(pts
-			(xy 429.26 36.83) (xy 429.26 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66bea660-98fd-49d9-9074-23adb275926b")
 	)
 	(wire
 		(pts
@@ -8906,16 +8670,6 @@
 			(type default)
 		)
 		(uuid "71fb3b72-28c6-4cf3-b21f-ddcce3abd943")
-	)
-	(wire
-		(pts
-			(xy 429.26 66.04) (xy 429.26 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71fffa12-4bc3-4104-a9b9-b418b0b8df54")
 	)
 	(wire
 		(pts
@@ -9229,16 +8983,6 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 77.47) (xy 429.26 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "859184b6-b328-4cbb-88bf-9ebbb549ab4a")
-	)
-	(wire
-		(pts
 			(xy 107.95 236.22) (xy 110.49 236.22)
 		)
 		(stroke
@@ -9249,16 +8993,6 @@
 	)
 	(wire
 		(pts
-			(xy 447.04 34.29) (xy 448.31 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85ad6007-ad24-4400-bd02-473732b86dab")
-	)
-	(wire
-		(pts
 			(xy 359.41 41.91) (xy 360.68 41.91)
 		)
 		(stroke
@@ -9266,16 +9000,6 @@
 			(type default)
 		)
 		(uuid "85c835da-21c3-4263-981f-f65a8961efff")
-	)
-	(wire
-		(pts
-			(xy 429.26 66.04) (xy 450.85 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85fde6eb-0f7d-4091-a2c8-6bea19444bc2")
 	)
 	(wire
 		(pts
@@ -9509,16 +9233,6 @@
 	)
 	(wire
 		(pts
-			(xy 449.58 63.5) (xy 450.85 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96254544-1d93-4f38-857e-d69f3354a6dc")
-	)
-	(wire
-		(pts
 			(xy 207.01 270.51) (xy 207.01 273.05)
 		)
 		(stroke
@@ -9646,16 +9360,6 @@
 			(type default)
 		)
 		(uuid "9ce2486e-a1b5-4fff-ad30-0b6ef10fae2f")
-	)
-	(wire
-		(pts
-			(xy 281.94 307.34) (xy 284.48 307.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cfe139b-9091-43fa-846d-04b87ea51c81")
 	)
 	(wire
 		(pts
@@ -10209,16 +9913,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 251.46) (xy 284.48 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bafa95ca-b954-476b-b953-8bf1cec63edf")
-	)
-	(wire
-		(pts
 			(xy 207.01 247.65) (xy 207.01 250.19)
 		)
 		(stroke
@@ -10439,16 +10133,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 254) (xy 284.48 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfbdb4e2-fb06-4a8b-801e-522ee400002c")
-	)
-	(wire
-		(pts
 			(xy 265.43 114.3) (xy 266.7 114.3)
 		)
 		(stroke
@@ -10486,16 +10170,6 @@
 			(type default)
 		)
 		(uuid "d114b359-4bd8-4e89-8484-183477aeccef")
-	)
-	(wire
-		(pts
-			(xy 420.37 72.39) (xy 421.64 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1adbefe-8268-4e15-85ca-d66960bd206b")
 	)
 	(wire
 		(pts
@@ -10646,16 +10320,6 @@
 			(type default)
 		)
 		(uuid "dc157005-07c4-4ce3-af0a-b0f1719c3b00")
-	)
-	(wire
-		(pts
-			(xy 368.3 92.71) (xy 387.35 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc920c6a-da9d-4478-9651-e715ac819412")
 	)
 	(wire
 		(pts
@@ -10869,16 +10533,6 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 93.98) (xy 429.26 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e870a64d-7b2d-49e6-9add-59bd975c32ee")
-	)
-	(wire
-		(pts
 			(xy 265.43 181.61) (xy 265.43 182.88)
 		)
 		(stroke
@@ -10956,16 +10610,6 @@
 			(type default)
 		)
 		(uuid "ef0a1c57-41f0-434e-b209-ca578b5d1237")
-	)
-	(wire
-		(pts
-			(xy 429.26 48.26) (xy 429.26 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef4b805f-1ee8-4ca1-a2d3-9dc6c0a25d58")
 	)
 	(wire
 		(pts
@@ -11279,16 +10923,6 @@
 	)
 	(wire
 		(pts
-			(xy 429.26 105.41) (xy 429.26 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff297710-693a-4a34-aca8-81b5d62bf4d8")
-	)
-	(wire
-		(pts
 			(xy 172.72 66.04) (xy 172.72 68.58)
 		)
 		(stroke
@@ -11350,29 +10984,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR3"
-		(shape input)
-		(at 281.94 307.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "068162eb-b69f-4a5b-9724-d09e76f5c34b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.4602 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -11467,29 +11078,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR0"
-		(shape input)
-		(at 281.94 251.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "151dc9f3-40f5-4082-8c02-5ef6560a89e3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.4602 251.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -12027,29 +11615,6 @@
 			)
 		)
 	)
-	(global_label "EXT_PWR4"
-		(shape input)
-		(at 281.94 309.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "603933ed-b7b4-4fa4-b16a-8351cd34f0fe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.4602 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VBUS"
 		(shape input)
 		(at 143.51 100.33 0)
@@ -12095,9 +11660,9 @@
 			)
 		)
 	)
-	(global_label "EXT_PWR4"
+	(global_label "EXT_PWR1"
 		(shape input)
-		(at 420.37 72.39 180)
+		(at 281.94 309.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12106,9 +11671,9 @@
 			)
 			(justify right)
 		)
-		(uuid "6a4928c0-cd85-448d-90a7-4386d6c0394d")
+		(uuid "6b05fade-f363-4cfe-bd46-6c1dbc71f5e6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 407.8902 72.39 0)
+			(at 269.4602 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12257,29 +11822,6 @@
 			)
 		)
 	)
-	(global_label "EXT_PWR2"
-		(shape input)
-		(at 359.41 99.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "923a9c36-5957-408d-aa4f-f324aa7f1dfe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 346.9302 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VBAT"
 		(shape input)
 		(at 40.64 58.42 180)
@@ -12395,6 +11937,29 @@
 			)
 		)
 	)
+	(global_label "EXT_PWR0"
+		(shape input)
+		(at 281.94 312.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "9a1df10e-d606-476b-a9b5-9dd163674c14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.4602 312.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "PWM_1"
 		(shape input)
 		(at 281.94 317.5 180)
@@ -12456,29 +12021,6 @@
 		(uuid "9ecab2fc-154f-46e6-8a6e-a178af9d14c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 46.7262 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR2"
-		(shape input)
-		(at 281.94 259.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "9f605307-29a4-445a-a1f9-820dd3767986")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.4602 259.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12663,29 +12205,6 @@
 		(uuid "bb3e3e02-dee5-493a-92e2-19c068fc2d63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 267.7062 287.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR1"
-		(shape input)
-		(at 281.94 254 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "be3745cd-7770-421f-bd5c-dfb6badc96b3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.4602 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12921,52 +12440,6 @@
 			)
 		)
 	)
-	(global_label "EXT_PWR3"
-		(shape input)
-		(at 420.37 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "e23b79fd-0926-40a5-a035-35d4634a701f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 407.8902 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR5"
-		(shape input)
-		(at 420.37 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "ebc6bb70-1fc9-46be-81df-cc3f6c48ab83")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 407.8902 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VPAD"
 		(shape input)
 		(at 40.64 36.83 180)
@@ -13002,29 +12475,6 @@
 		(uuid "f7448e1b-9c9e-4f13-b611-e274c66d8ac8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 44.8514 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "EXT_PWR5"
-		(shape input)
-		(at 281.94 312.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-			(justify right)
-		)
-		(uuid "fa4d2569-ded4-473f-83b0-319b215e7f77")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.4602 312.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13115,7 +12565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0025e112-8a10-4619-b479-fc77b4128ea5")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR072"
 			(at 207.01 289.56 0)
 			(effects
 				(font
@@ -13165,7 +12615,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR080")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -13181,7 +12631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "006fd612-c8bf-412e-9d81-607c822c9d8b")
-		(property "Reference" "J16"
+		(property "Reference" "J12"
 			(at 434.34 148.5899 0)
 			(effects
 				(font
@@ -13247,7 +12697,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J16")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -13354,7 +12804,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0144596e-5566-45bf-952a-6f5b76052bbe")
-		(property "Reference" "J13"
+		(property "Reference" "J9"
 			(at 394.97 140.9699 0)
 			(effects
 				(font
@@ -13420,7 +12870,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J13")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -13436,7 +12886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "028f331f-1d32-4a14-83ea-c4039dc2bd24")
-		(property "Reference" "J20"
+		(property "Reference" "J16"
 			(at 86.36 283.2099 0)
 			(effects
 				(font
@@ -13536,7 +12986,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J20")
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -13709,7 +13159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "048d72a0-74ee-48c7-b7a8-0a385e6071ca")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR010"
 			(at 34.29 60.96 0)
 			(effects
 				(font
@@ -13760,74 +13210,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 449.58 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "061b3f9f-5d7d-49b3-827c-41fd0cc32257")
-		(property "Reference" "#PWR014"
-			(at 453.39 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 445.77 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 449.58 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 449.58 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 449.58 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f96ac5f1-c8bb-46fd-9b9a-df076997fcfb")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR014")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -14133,7 +13516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09bc4c6c-305c-40f6-88de-c83404931a1c")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR084"
 			(at 113.03 355.6 0)
 			(effects
 				(font
@@ -14183,73 +13566,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR092")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 429.26 49.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c1ebf23-7d40-4eea-b749-9ff8fa80f4c4")
-		(property "Reference" "#PWR09"
-			(at 429.26 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 429.26 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 429.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 429.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 429.26 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8db1ca1c-561d-4769-9a9b-73e0b03140d7")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR09")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -14265,7 +13582,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d59d5cb-ed8e-4f3b-a884-05e37b4b1820")
-		(property "Reference" "J14"
+		(property "Reference" "J10"
 			(at 434.34 140.9699 0)
 			(effects
 				(font
@@ -14331,7 +13648,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J14")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -14444,7 +13761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "112df5a4-3742-406a-a1b8-79decaa6face")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR07"
 			(at 368.3 54.61 0)
 			(effects
 				(font
@@ -14494,7 +13811,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR08")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -14597,7 +13914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "117498bf-1fef-452e-bb05-3d121c488c59")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR034"
 			(at 386.08 127 0)
 			(effects
 				(font
@@ -14648,7 +13965,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR042")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -14664,7 +13981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "139a9845-68bf-4316-a827-3799eb434448")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 200.66 53.34 0)
 			(effects
 				(font
@@ -14714,7 +14031,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -14924,7 +14241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "175bf4ee-4732-498e-adca-e3c67de3092a")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR026"
 			(at 212.09 125.73 0)
 			(effects
 				(font
@@ -14974,7 +14291,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR034")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -15076,7 +14393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c1208b6-99e2-46c0-bf8f-93a2b1ebd84e")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR032"
 			(at 293.37 130.81 0)
 			(effects
 				(font
@@ -15126,7 +14443,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR040")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -15141,7 +14458,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c2c3a46-3c45-40fc-a039-2eeaa9954409")
-		(property "Reference" "J17"
+		(property "Reference" "J13"
 			(at 73.914 235.458 0)
 			(effects
 				(font
@@ -15241,7 +14558,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J17")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -15257,7 +14574,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c9f7fac-2256-4b98-b98a-34c271ffa8cd")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR079"
 			(at 233.68 325.12 0)
 			(effects
 				(font
@@ -15307,7 +14624,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR087")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -15611,7 +14928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21b750f6-fbbd-4369-900f-69e45c7efe39")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR067"
 			(at 207.01 243.84 0)
 			(effects
 				(font
@@ -15661,74 +14978,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 447.04 91.44 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22654341-3f4f-488c-b761-3faa6d050c69")
-		(property "Reference" "#PWR028"
-			(at 450.85 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 443.23 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 447.04 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 447.04 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 447.04 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d81ea982-aeed-463f-a6b8-896b24de4eb3")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR028")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -16008,7 +15258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2381df9f-0fc5-417b-b1eb-2c4d4ea324cd")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR027"
 			(at 386.08 119.38 0)
 			(effects
 				(font
@@ -16059,7 +15309,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR035")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -16162,76 +15412,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 392.43 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "27ada559-03cc-414f-b095-cd75d611c193")
-		(property "Reference" "J7"
-			(at 394.97 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 394.97 92.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 392.43 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 392.43 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 392.43 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f87584df-e851-44df-898f-f5e270f1ba25")
-		)
-		(pin "2"
-			(uuid "b9eedf93-adcc-45cf-ba78-dd116900775b")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+8V")
 		(at 382.27 139.7 90)
 		(unit 1)
@@ -16241,7 +15421,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28126751-5773-40ee-9c3b-f334a74820c2")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR044"
 			(at 386.08 139.7 0)
 			(effects
 				(font
@@ -16292,7 +15472,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR052")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -16308,7 +15488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28390179-02a0-43db-9b43-97661ae03978")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR081"
 			(at 123.19 334.01 0)
 			(effects
 				(font
@@ -16358,73 +15538,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR089")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 368.3 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28cb6ee4-9f72-4be3-bdf7-78e7abc39ab5")
-		(property "Reference" "#PWR029"
-			(at 368.3 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 368.3 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 368.3 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 368.3 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 368.3 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "208d9118-48c2-4b52-9887-0d7da09cda4c")
-		)
-		(instances
-			(project "NavPoTS-Power"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR029")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -16440,7 +15554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28da24ec-1469-44a1-b27a-80839333e106")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011"
 			(at 392.43 62.23 0)
 			(effects
 				(font
@@ -16491,7 +15605,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -16595,7 +15709,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a194ef3-48a7-4097-81ee-7b91a5c3f140")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR065"
 			(at 248.92 212.09 0)
 			(effects
 				(font
@@ -16645,7 +15759,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR073")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -17043,7 +16157,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2e75e24d-9dab-470d-9636-4800866c7739")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR08"
 			(at 209.55 54.61 0)
 			(effects
 				(font
@@ -17093,7 +16207,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR010")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -17197,7 +16311,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30a5fc5c-3d46-44c0-8300-4f9a34a7bb7c")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR019"
 			(at 262.89 82.55 0)
 			(effects
 				(font
@@ -17247,7 +16361,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR022")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -17263,7 +16377,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31eb91bf-78a9-4f35-8cec-092df6d6f7bd")
-		(property "Reference" "Q11"
+		(property "Reference" "Q7"
 			(at 123.19 283.21 90)
 			(effects
 				(font
@@ -17351,7 +16465,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q11")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -17647,7 +16761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "357b50f8-f3cf-46b9-bdd7-c0a3b715d028")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR074"
 			(at 113.03 295.91 0)
 			(effects
 				(font
@@ -17697,7 +16811,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR082")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -17713,7 +16827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35f9f310-6a93-49b8-a3d8-837439d83163")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR038"
 			(at 415.29 129.54 0)
 			(effects
 				(font
@@ -17764,7 +16878,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR046")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -17944,97 +17058,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
-		(at 426.72 100.33 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "3a24a191-58df-4e70-8622-a1ed2c80c312")
-		(property "Reference" "Q8"
-			(at 433.07 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 433.07 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 431.8 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 426.72 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 426.72 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO3400A"
-			(at 426.72 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Alpha & Omega Semiconductor Inc."
-			(at 426.72 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dd3e042b-a177-4601-b09d-863d06f166c0")
-		)
-		(pin "3"
-			(uuid "55301d7c-aa6d-43b3-9a62-5b90a4d0162b")
-		)
-		(pin "1"
-			(uuid "9b47607a-4dde-4e60-988d-17d80a018853")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 121.92 110.49 0)
 		(unit 1)
@@ -18043,7 +17066,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3a6df353-bd55-4fc6-b48d-9f77a4174df5")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR023"
 			(at 121.92 116.84 0)
 			(effects
 				(font
@@ -18093,7 +17116,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR031")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -18203,7 +17226,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3ce3e871-63ce-472f-af84-7f4929825a5b")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 219.71 48.26 0)
 			(effects
 				(font
@@ -18253,7 +17276,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -18348,76 +17371,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 455.93 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "3d51623d-66ce-4320-95a4-4120cff674fb")
-		(property "Reference" "J6"
-			(at 458.47 63.4999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 458.47 66.0399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 455.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 455.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 455.93 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "773928b1-b750-4858-8eed-38203b0e97a7")
-		)
-		(pin "2"
-			(uuid "83bb07f1-cffb-4acb-b9f7-5e1287583d75")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 393.7 129.54 180)
 		(unit 1)
@@ -18427,7 +17380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d5dce51-7a16-4af0-a26d-206f9d8607c2")
-		(property "Reference" "J11"
+		(property "Reference" "J7"
 			(at 394.97 128.2699 0)
 			(effects
 				(font
@@ -18493,7 +17446,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J11")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -18604,7 +17557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41ff158c-ea99-4588-969a-d9daf71e1e8d")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR042"
 			(at 74.93 143.51 0)
 			(effects
 				(font
@@ -18654,73 +17607,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 429.26 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "423fe96b-11fe-40b1-bfbb-aebf9ca9b022")
-		(property "Reference" "#PWR030"
-			(at 429.26 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 429.26 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 429.26 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 429.26 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 429.26 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09577748-88b8-4e71-9ffb-be29ee569541")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR030")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -18827,7 +17714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "436c0259-0830-4282-ab7b-9accc5792164")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR012"
 			(at 281.94 72.39 0)
 			(effects
 				(font
@@ -18877,7 +17764,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR015")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -18893,7 +17780,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43bb4678-0e0c-4731-a50a-1a7dd57ec283")
-		(property "Reference" "Q10"
+		(property "Reference" "Q6"
 			(at 45.72 283.21 90)
 			(effects
 				(font
@@ -18981,7 +17868,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q10")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -18997,7 +17884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "467c8a77-9cc2-4402-af4f-5cbdd0aeb75f")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR039"
 			(at 123.19 140.97 0)
 			(effects
 				(font
@@ -19047,7 +17934,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR047")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -19419,7 +18306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bfb0d75-356f-4fb0-9d63-2497cb1f1897")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR049"
 			(at 386.08 147.32 0)
 			(effects
 				(font
@@ -19470,7 +18357,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR057")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -19552,7 +18439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "517eb9e5-7a87-48ef-9a51-c00bc1a020d0")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR040"
 			(at 236.22 140.97 0)
 			(effects
 				(font
@@ -19602,7 +18489,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR048")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -19618,7 +18505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "523fd055-4e21-4061-81c0-7981a9e46fbf")
-		(property "Reference" "J15"
+		(property "Reference" "J11"
 			(at 394.97 148.5899 0)
 			(effects
 				(font
@@ -19684,7 +18571,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J15")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -19788,7 +18675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57a88e15-687e-484c-a06b-37c74e84c573")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR028"
 			(at 425.45 119.38 0)
 			(effects
 				(font
@@ -19839,7 +18726,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR036")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -19962,7 +18849,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5800e0d0-3bb3-4a6b-ac50-8c5dd8342562")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR076"
 			(at 208.28 311.15 0)
 			(effects
 				(font
@@ -20012,7 +18899,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR084")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -20028,7 +18915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a38e78b-6553-4b0c-a9d7-4bc5d25ae38a")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR035"
 			(at 425.45 127 0)
 			(effects
 				(font
@@ -20079,7 +18966,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR043")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -20210,7 +19097,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ae0e5b8-e01b-4061-b6c7-adee29db6891")
-		(property "Reference" "Q13"
+		(property "Reference" "Q9"
 			(at 123.19 342.9 90)
 			(effects
 				(font
@@ -20298,7 +19185,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q13")
+					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -20314,7 +19201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c394c11-0ead-4e04-907d-0b345fc2105f")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR064"
 			(at 92.71 207.01 0)
 			(effects
 				(font
@@ -20364,7 +19251,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR072")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -20380,7 +19267,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61e8c10b-c6a2-47a8-a0c5-5168a40d47a8")
-		(property "Reference" "J9"
+		(property "Reference" "J5"
 			(at 394.97 120.6499 0)
 			(effects
 				(font
@@ -20446,7 +19333,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J9")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -20462,7 +19349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "623176d5-aeb2-4ed1-b84c-0617d3ab1734")
-		(property "Reference" "J4"
+		(property "Reference" "J3"
 			(at 63.5 59.6899 0)
 			(effects
 				(font
@@ -20562,7 +19449,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J4")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -20578,7 +19465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6368fe07-977a-43de-b524-41f85cd7f2e1")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR061"
 			(at 234.95 199.39 0)
 			(effects
 				(font
@@ -20628,7 +19515,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR069")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -20644,7 +19531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63a153a4-a3cf-4169-be94-81593ddae858")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 189.23 53.34 0)
 			(effects
 				(font
@@ -20694,7 +19581,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -20710,7 +19597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64858711-c520-4d5d-a34e-20fc8fcd7785")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR053"
 			(at 92.71 172.72 0)
 			(effects
 				(font
@@ -20760,7 +19647,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR061")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -20776,7 +19663,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65923966-9e8a-4895-bc43-b4ef8efe87ac")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR016"
 			(at 172.72 74.93 0)
 			(effects
 				(font
@@ -20826,7 +19713,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR019")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -20951,7 +19838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68442f45-7126-4d6c-8d41-4bb9eb409ff7")
-		(property "Reference" "J10"
+		(property "Reference" "J6"
 			(at 434.34 120.6499 0)
 			(effects
 				(font
@@ -21017,7 +19904,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J10")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -21033,7 +19920,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a77d262-8bd8-4a0f-a84a-cc3f5feff276")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR033"
 			(at 304.8 130.81 0)
 			(effects
 				(font
@@ -21083,7 +19970,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR041")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -21341,7 +20228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6fc9d68a-29ee-485d-a54b-11f75ee0fc83")
-		(property "Reference" "J25"
+		(property "Reference" "J21"
 			(at 86.36 342.8999 0)
 			(effects
 				(font
@@ -21441,7 +20328,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J25")
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -21630,7 +20517,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74394787-c1e8-42e8-a4b2-0624fda91da4")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR087"
 			(at 45.72 393.7 0)
 			(effects
 				(font
@@ -21680,7 +20567,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR095")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -21696,7 +20583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7468c3f1-1110-48fb-b4c0-34ff5ee4a0f4")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR021"
 			(at 234.95 95.25 0)
 			(effects
 				(font
@@ -21746,7 +20633,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR025")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -21847,7 +20734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7587720d-4e23-4fab-bdc6-0806c5d055cf")
-		(property "Reference" "Q9"
+		(property "Reference" "Q5"
 			(at 95.25 278.13 90)
 			(effects
 				(font
@@ -21935,7 +20822,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q9")
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -21951,7 +20838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75958047-e1cd-4e0b-a7c0-d668f5922478")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR057"
 			(at 279.4 189.23 0)
 			(effects
 				(font
@@ -22001,7 +20888,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR065")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -22017,7 +20904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "767b61d5-f54e-4e6a-a7be-350cc981a29d")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR069"
 			(at 232.41 257.81 0)
 			(effects
 				(font
@@ -22067,7 +20954,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR077")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -22360,7 +21247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83db5393-9b65-42e9-b280-5c5767d0d5b7")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR020"
 			(at 368.3 83.82 0)
 			(effects
 				(font
@@ -22410,7 +21297,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR023")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -22426,7 +21313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85d7ef7f-7e77-4c32-b49d-2aefb2038ab7")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR088"
 			(at 123.19 393.7 0)
 			(effects
 				(font
@@ -22476,7 +21363,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR096")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -22492,7 +21379,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "860c986f-5e70-4ea4-b51a-9fb65295ac4a")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR082"
 			(at 283.21 350.52 0)
 			(effects
 				(font
@@ -22542,7 +21429,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR090")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -22673,7 +21560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "877281e4-3e57-4f5c-bed5-7e413637fdfb")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR062"
 			(at 265.43 199.39 0)
 			(effects
 				(font
@@ -22723,7 +21610,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR070")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -22738,7 +21625,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "88c5ade4-0ca5-440e-ac73-9a1ebc8dee09")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR024"
 			(at 132.08 116.84 0)
 			(effects
 				(font
@@ -22788,7 +21675,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR032")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -22895,7 +21782,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "896c03ec-11a4-42c3-b080-d7d98acb7206")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR018"
 			(at 198.12 80.01 0)
 			(effects
 				(font
@@ -22945,7 +21832,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR021")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -22961,7 +21848,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a567db4-83c1-4e93-8cc7-63d986a40d31")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR073"
 			(at 35.56 295.91 0)
 			(effects
 				(font
@@ -23011,7 +21898,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR081")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -23027,7 +21914,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ad05655-dce0-4f13-9baf-469f43824509")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR013"
 			(at 294.64 72.39 0)
 			(effects
 				(font
@@ -23077,7 +21964,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR016")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -23093,7 +21980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c7518d1-abf1-4dd8-8ee9-0d4b52ec256f")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR075"
 			(at 232.41 303.53 0)
 			(effects
 				(font
@@ -23143,7 +22030,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR083")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -23159,7 +22046,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fe05307-baed-4973-9cb7-2f75e83c8068")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 176.53 53.34 0)
 			(effects
 				(font
@@ -23209,7 +22096,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -23397,7 +22284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91d81cc0-14f8-4e2a-878b-457dab8c9fa5")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR09"
 			(at 332.74 57.15 0)
 			(effects
 				(font
@@ -23447,7 +22334,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR011")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -23463,7 +22350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9215e0fd-fde1-46cd-a4b9-9178cbe217c8")
-		(property "Reference" "Q5"
+		(property "Reference" "Q3"
 			(at 96.52 77.47 90)
 			(effects
 				(font
@@ -23551,7 +22438,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q5")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -23567,7 +22454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9263317b-2a2a-4229-a639-5bd942228c18")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR083"
 			(at 35.56 355.6 0)
 			(effects
 				(font
@@ -23617,7 +22504,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR091")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -23942,76 +22829,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 453.39 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "9432a4a8-1450-4bbf-9f9a-bc7f83a705a1")
-		(property "Reference" "J8"
-			(at 455.93 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 455.93 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 453.39 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 453.39 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 453.39 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1f801a0f-f06b-41c9-8ede-289d6bc7f664")
-		)
-		(pin "2"
-			(uuid "634a96d2-8627-4d96-bbe3-afa4dee964c3")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 309.88 113.03 0)
 		(unit 1)
@@ -24021,7 +22838,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94c46903-f6ef-4cf9-9790-06eb633e5d8e")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR025"
 			(at 309.88 116.84 0)
 			(effects
 				(font
@@ -24071,7 +22888,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR033")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -24174,7 +22991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94fc816c-a6de-4108-b58f-4b41a90b7466")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR015"
 			(at 320.04 72.39 0)
 			(effects
 				(font
@@ -24224,7 +23041,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR018")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -24337,7 +23154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96f98123-07c5-4956-9270-3de832246f7f")
-		(property "Reference" "J24"
+		(property "Reference" "J20"
 			(at 222.25 303.53 0)
 			(effects
 				(font
@@ -24407,7 +23224,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J24")
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -24537,7 +23354,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9aea1aca-a940-46b8-9945-b8dd2cd3ee70")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR066"
 			(at 132.08 242.57 0)
 			(effects
 				(font
@@ -24587,7 +23404,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR074")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -24603,7 +23420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b101b50-de74-497f-907d-d95e019f2666")
-		(property "Reference" "J19"
+		(property "Reference" "J15"
 			(at 220.98 259.08 0)
 			(effects
 				(font
@@ -24673,7 +23490,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J19")
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -24689,7 +23506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b95b2d9-7b17-4f2d-91a4-545dcc571835")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR060"
 			(at 124.46 187.96 0)
 			(effects
 				(font
@@ -24739,98 +23556,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
-		(at 426.72 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "9f77d7e8-f23b-4b0b-84c1-10414060b9d6")
-		(property "Reference" "Q2"
-			(at 433.07 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 433.07 44.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 431.8 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 426.72 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 426.72 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO3400A"
-			(at 426.72 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Alpha & Omega Semiconductor Inc."
-			(at 426.72 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cf7d6c15-8f4e-4865-bec8-fc8254b1aa0d")
-		)
-		(pin "3"
-			(uuid "b40c241e-3fb1-43b1-8572-a4fe71fd5bf4")
-		)
-		(pin "1"
-			(uuid "b8289343-6227-402d-a733-1bb30fbe8f10")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q2")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -25136,7 +23862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5fdf88e-6423-4a52-8ce8-bb28ad1abd2d")
-		(property "Reference" "J22"
+		(property "Reference" "J18"
 			(at 220.98 281.94 0)
 			(effects
 				(font
@@ -25206,7 +23932,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J22")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -25221,7 +23947,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8187fef-71df-4e75-816a-95f6bcaaa438")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR056"
 			(at 111.76 187.96 0)
 			(effects
 				(font
@@ -25271,7 +23997,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR064")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -25287,7 +24013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9934428-9b20-4e95-b5d3-6b7c9443797e")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR051"
 			(at 375.92 149.86 0)
 			(effects
 				(font
@@ -25338,7 +24064,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR059")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -25354,7 +24080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9cd64de-4698-4107-b636-0ff4409bedec")
-		(property "Reference" "J12"
+		(property "Reference" "J8"
 			(at 434.34 128.2699 0)
 			(effects
 				(font
@@ -25420,7 +24146,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J12")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -25551,7 +24277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af035b2f-f28b-48eb-979e-5d0bdad3bd54")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR052"
 			(at 415.29 149.86 0)
 			(effects
 				(font
@@ -25602,77 +24328,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 453.39 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "b0827b93-92c9-4314-ae7c-3af66b3839a3")
-		(property "Reference" "J3"
-			(at 455.93 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 455.93 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 453.39 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 453.39 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 453.39 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "778dbdb0-ff53-4a86-95c0-17630c487d52")
-		)
-		(pin "2"
-			(uuid "1d1f8c90-4ddb-4802-82da-54423fd2c07d")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J3")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -25688,7 +24344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1bd8cbb-a824-4a9b-b895-63dcbed6547f")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR055"
 			(at 210.82 184.15 0)
 			(effects
 				(font
@@ -25738,7 +24394,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR063")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -25954,7 +24610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6c4f7d7-bd32-4a90-a9d3-6596672c9658")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR050"
 			(at 425.45 147.32 0)
 			(effects
 				(font
@@ -26005,74 +24661,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 447.04 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b87a1217-b34c-4ee3-a7cc-cb27393601d4")
-		(property "Reference" "#PWR03"
-			(at 450.85 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 443.23 34.2899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 447.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 447.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 447.04 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c9089127-fe0a-4e4c-a0b5-036845c09ca4")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR03")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -26454,7 +25043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bb97ec7e-12a7-4d47-a60e-ed196638533d")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 397.51 63.4999 0)
 			(effects
 				(font
@@ -26554,7 +25143,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -26745,7 +25334,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bce88348-e010-43d6-ba10-84a8e713933e")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR047"
 			(at 415.29 142.24 0)
 			(effects
 				(font
@@ -26796,7 +25385,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR055")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -27079,7 +25668,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf0dba48-2c74-45bb-ad3f-c156614fe3db")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR078"
 			(at 143.51 318.77 0)
 			(effects
 				(font
@@ -27129,7 +25718,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR086")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -27329,7 +25918,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfef4c0c-1b8e-4452-a106-1a0e08c7e9f1")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR059"
 			(at 303.53 189.23 0)
 			(effects
 				(font
@@ -27379,7 +25968,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR067")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -27395,7 +25984,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0e3ad0a-1de7-4d57-ad75-acb374a8d495")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR045"
 			(at 425.45 139.7 0)
 			(effects
 				(font
@@ -27446,7 +26035,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR053")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -27550,7 +26139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c24d2fd9-f798-4d93-b589-947fef1a3287")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR022"
 			(at 252.73 97.79 0)
 			(effects
 				(font
@@ -27600,7 +26189,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR027")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -27616,7 +26205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c61e0895-0572-4cb5-80df-7c15d0a825af")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR037"
 			(at 375.92 129.54 0)
 			(effects
 				(font
@@ -27667,98 +26256,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
-		(at 426.72 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "c707d28f-5401-4903-a99b-5995e0634d89")
-		(property "Reference" "Q4"
-			(at 433.07 71.1199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 433.07 73.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 431.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 426.72 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 426.72 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO3400A"
-			(at 426.72 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Alpha & Omega Semiconductor Inc."
-			(at 426.72 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "692e3a46-b156-446d-9ba5-7ea8ce8e0e5f")
-		)
-		(pin "3"
-			(uuid "303e6fb9-ed79-4c95-b98e-18985a78badf")
-		)
-		(pin "1"
-			(uuid "1654a65d-b77b-417f-9aa8-b8ca01b11cd2")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q4")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -27928,7 +26426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccd3311e-4bb9-45c4-8180-0e5a27cf2ef4")
-		(property "Reference" "Q7"
+		(property "Reference" "Q4"
 			(at 74.93 93.98 90)
 			(effects
 				(font
@@ -28016,7 +26514,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q7")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -28032,7 +26530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cef43c57-657c-436b-9909-57a428413c9a")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR071"
 			(at 232.41 280.67 0)
 			(effects
 				(font
@@ -28082,74 +26580,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 386.08 90.17 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0254657-168f-4211-833a-26cf411c3346")
-		(property "Reference" "#PWR026"
-			(at 389.89 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 382.27 90.1699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 386.08 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 386.08 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 386.08 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "976c31d4-0df9-47aa-8c4d-818ae03d0045")
-		)
-		(instances
-			(project "NavPoTS-Power"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR026")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -28165,7 +26596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d058a833-9cf9-4cab-b21b-bdf8738f63b8")
-		(property "Reference" "Q3"
+		(property "Reference" "Q2"
 			(at 372.11 69.8499 0)
 			(effects
 				(font
@@ -28240,7 +26671,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q3")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -28256,7 +26687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d11c1a66-fa4b-461b-864c-8771ee92e5ab")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR029"
 			(at 375.92 121.92 0)
 			(effects
 				(font
@@ -28307,7 +26738,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR037")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -28323,7 +26754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5aa6795-e228-4990-806e-68cf2951ca23")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR030"
 			(at 415.29 121.92 0)
 			(effects
 				(font
@@ -28374,7 +26805,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR038")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -28390,7 +26821,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6c17e89-6d49-48b9-a48a-b2f5ef47b834")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR070"
 			(at 207.01 266.7 0)
 			(effects
 				(font
@@ -28440,7 +26871,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR078")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -28456,7 +26887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d76ea6eb-9bf4-41c5-92b3-275b99a4806c")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR054"
 			(at 308.61 175.26 0)
 			(effects
 				(font
@@ -28506,7 +26937,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR062")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -28522,7 +26953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d798af05-c05b-4c8a-8d4e-31eaff59f057")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR041"
 			(at 266.7 140.97 0)
 			(effects
 				(font
@@ -28572,7 +27003,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR049")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -28588,7 +27019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7a42194-d754-479a-b87f-27f7e713efcc")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR080"
 			(at 45.72 334.01 0)
 			(effects
 				(font
@@ -28638,7 +27069,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR088")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -28653,7 +27084,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8384470-4804-4a46-b844-d6e85fbe73b3")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR068"
 			(at 66.04 247.65 0)
 			(effects
 				(font
@@ -28703,7 +27134,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR076")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -28718,7 +27149,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d956d087-de92-42a5-a999-7509f94c70b0")
-		(property "Reference" "J23"
+		(property "Reference" "J19"
 			(at 289.56 232.156 0)
 			(effects
 				(font
@@ -28911,7 +27342,7 @@
 		(instances
 			(project "NavPoTS-South"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J23")
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -28993,7 +27424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dac03a58-1823-43ca-804b-06e6d4e0cbc8")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR048"
 			(at 250.19 153.67 0)
 			(effects
 				(font
@@ -29043,7 +27474,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR056")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -29059,7 +27490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db48dd66-d4ef-4c7b-9c5c-79340ea08aea")
-		(property "Reference" "J21"
+		(property "Reference" "J17"
 			(at 163.83 283.2099 0)
 			(effects
 				(font
@@ -29159,7 +27590,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J21")
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -29387,7 +27818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd56457d-465b-4757-8758-d44c149401fe")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR058"
 			(at 292.1 189.23 0)
 			(effects
 				(font
@@ -29437,7 +27868,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR066")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -29453,7 +27884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dddd6ce5-b45e-4ce3-b4ec-51afd20c69d9")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR046"
 			(at 375.92 142.24 0)
 			(effects
 				(font
@@ -29504,98 +27935,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GSD")
-		(at 365.76 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "df519f37-5655-46fc-aa52-cec5d7b478d8")
-		(property "Reference" "Q6"
-			(at 372.11 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NMOS_GSD"
-			(at 372.11 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 370.84 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 365.76 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, gate/source/drain"
-			(at 365.76 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO3400A"
-			(at 365.76 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Alpha & Omega Semiconductor Inc."
-			(at 365.76 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c4b6dc9b-68a5-419d-8c1d-b6e49083022a")
-		)
-		(pin "3"
-			(uuid "01dffdb3-d738-44b4-a751-8ae7e3ba82ab")
-		)
-		(pin "1"
-			(uuid "f1e6d014-d81b-481d-a2bb-12c6bb118c98")
-		)
-		(instances
-			(project "NavPoTS-Power"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q6")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -29946,7 +28286,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e618414c-a9af-4991-ae98-af4399c57eb2")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR085"
 			(at 66.04 378.46 0)
 			(effects
 				(font
@@ -29996,7 +28336,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR093")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -30012,7 +28352,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e62a8c60-9ff9-47e9-85c6-331ec65772fe")
-		(property "Reference" "J26"
+		(property "Reference" "J22"
 			(at 163.83 342.8999 0)
 			(effects
 				(font
@@ -30112,7 +28452,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J26")
+					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -30128,7 +28468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e79ccbcf-330d-4a43-9c6d-c95a1fccb61c")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR017"
 			(at 187.96 74.93 0)
 			(effects
 				(font
@@ -30178,7 +28518,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR020")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -30194,7 +28534,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7cf2723-8625-4bff-81ef-6cfd901b9744")
-		(property "Reference" "J18"
+		(property "Reference" "J14"
 			(at 220.98 236.22 0)
 			(effects
 				(font
@@ -30264,7 +28604,7 @@
 		(instances
 			(project ""
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "J18")
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -30279,7 +28619,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e86e8afa-74db-4e9d-b7c5-0daadaa9c0e7")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR086"
 			(at 143.51 378.46 0)
 			(effects
 				(font
@@ -30329,7 +28669,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR094")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -30632,7 +28972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebd54bdf-203e-4928-b419-eaafdb8140da")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR043"
 			(at 219.71 144.78 0)
 			(effects
 				(font
@@ -30682,7 +29022,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR051")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -30842,72 +29182,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 429.26 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecb13a0a-65a2-4dd8-988a-e3c37216c0f6")
-		(property "Reference" "#PWR024"
-			(at 429.26 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 429.26 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 429.26 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 429.26 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 429.26 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "029c2013-de58-4fac-bef9-44bb6040ab94")
-		)
-		(instances
-			(project "NavPoTS-South"
-				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse")
 		(at 149.86 349.25 90)
 		(unit 1)
@@ -31012,7 +29286,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed6e2cdf-4ea0-451b-b5a4-7fb08f64da1a")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR031"
 			(at 280.67 130.81 0)
 			(effects
 				(font
@@ -31062,7 +29336,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR039")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -31078,7 +29352,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed93a02f-04fc-4c30-9bcc-a2b91a8b1848")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR036"
 			(at 57.15 135.89 0)
 			(effects
 				(font
@@ -31128,7 +29402,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR044")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -31727,7 +30001,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f76eb453-90a2-4890-ba56-0a2785c7b7a6")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR077"
 			(at 66.04 318.77 0)
 			(effects
 				(font
@@ -31777,7 +30051,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR085")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -31793,7 +30067,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fabed4a4-f2e0-48ea-8a0d-325f4fd911cb")
-		(property "Reference" "Q12"
+		(property "Reference" "Q8"
 			(at 45.72 342.9 90)
 			(effects
 				(font
@@ -31881,7 +30155,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "Q12")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -31897,7 +30171,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "faecf3a9-53a4-4ea9-85bb-8417770ed1ca")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR063"
 			(at 218.44 203.2 0)
 			(effects
 				(font
@@ -31947,7 +30221,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR071")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -32076,7 +30350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbc871e0-984a-47c2-9c17-0ac1ae687909")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR014"
 			(at 307.34 72.39 0)
 			(effects
 				(font
@@ -32126,7 +30400,7 @@
 		(instances
 			(project "NavPoTS-Power"
 				(path "/fd2995ec-18df-4afe-b9fd-48c8cf866949"
-					(reference "#PWR017")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)

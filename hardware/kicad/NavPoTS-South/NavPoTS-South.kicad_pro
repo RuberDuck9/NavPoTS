@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.2,
-          "height": 3.2,
-          "width": 3.2
+          "drill": 0.0,
+          "height": 1.05,
+          "width": 1.575
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -187,7 +187,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.6,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -589,10 +592,6 @@
       {
         "netclass": "VHPWR",
         "pattern": "+8V"
-      },
-      {
-        "netclass": "PWR",
-        "pattern": "GND"
       },
       {
         "netclass": "ANALOG",
