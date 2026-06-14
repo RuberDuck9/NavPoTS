@@ -5884,9 +5884,9 @@
 		)
 		(uuid "3b0838e4-4874-419c-8842-2d45b8cf11c4")
 	)
-	(text "SOUTH BOARD"
+	(text "BRIDGE BOARD"
 		(exclude_from_sim no)
-		(at 201.676 218.186 0)
+		(at 202.184 218.186 0)
 		(effects
 			(font
 				(size 2.54 2.54)
