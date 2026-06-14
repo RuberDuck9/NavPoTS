@@ -15528,7 +15528,7 @@
 	)
 	(global_label "SPI2_CS3"
 		(shape input)
-		(at 200.66 237.49 0)
+		(at 200.66 240.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15539,7 +15539,7 @@
 		)
 		(uuid "0b05f8cc-6309-403d-bdbb-b353b466526f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 212.5956 237.49 0)
+			(at 212.5956 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15961,7 +15961,7 @@
 	)
 	(global_label "SPI2_CS3"
 		(shape input)
-		(at 537.21 193.04 180)
+		(at 537.21 195.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -15972,7 +15972,7 @@
 		)
 		(uuid "2d1c3b83-26e7-4c79-8156-218614e072cb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 525.2744 193.04 0)
+			(at 525.2744 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18367,7 +18367,7 @@
 	)
 	(global_label "GNSS_nRST"
 		(shape input)
-		(at 537.21 195.58 180)
+		(at 537.21 193.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -18378,7 +18378,7 @@
 		)
 		(uuid "c3d01acc-de39-45ee-b55d-dcea7a4cf818")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 523.6416 195.58 0)
+			(at 523.6416 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19059,7 +19059,7 @@
 	)
 	(global_label "GNSS_nRST"
 		(shape input)
-		(at 200.66 240.03 0)
+		(at 200.66 237.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19070,7 +19070,7 @@
 		)
 		(uuid "f837c341-36b5-4844-8f8c-934e29bb9696")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.2284 240.03 0)
+			(at 214.2284 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21949,6 +21949,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "PEC14SAGN"
+			(at 340.36 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 340.36 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "205abbc3-52d6-461b-b2b6-5d3c4a65c193")
 		)
@@ -23737,6 +23755,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "PEC14SAGN"
+			(at 341.63 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 341.63 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "7b167c31-5b23-42bb-9a62-fe6eede49391")
 		)
@@ -24882,6 +24918,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 340.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PEC14SAGN"
+			(at 340.36 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 340.36 175.26 0)
 			(effects
 				(font
@@ -30535,6 +30589,24 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 340.36 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PEC14SAGN"
+			(at 340.36 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 340.36 220.98 0)
 			(effects
 				(font

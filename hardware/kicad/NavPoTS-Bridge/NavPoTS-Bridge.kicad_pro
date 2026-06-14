@@ -598,7 +598,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/home/Luke/cad/kicad/projects/NavPoTS-R1/Bridge/gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -609,7 +609,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "/home/Luke/cad/kicad/projects/NavPoTS-R1/Bridge/bridge_bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
