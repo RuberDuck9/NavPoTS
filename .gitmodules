@@ -1,0 +1,6 @@
+[submodule "software/libopencm3"]
+	path = software/libopencm3
+	url = https://github.com/libopencm3/libopencm3
+[submodule "hardware/kicad-libraries"]
+	path = hardware/kicad-libraries
+	url = https://github.com/RuberDuck9/kicad-libraries
