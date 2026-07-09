@@ -2,7 +2,9 @@ PROJECT = NavPoTS
 BUILD_DIR = bin
 
 CFILES = main.c
-CFILES += io.c
+CFILES += gpio.c
+CFILES += spi.c
+CFILES += usart.c
 
 DEVICE=stm32h743zit6
 OOCD_FILE = board/stm32f4discovery.cfg
