@@ -1,6 +1,6 @@
 #include "spi.h"
 
-void spi_init(enum rcc_periph_clken spi_rcc_port, uint32_t spi_gpio_port, uint16_t spi_sck, uint16_t spi_miso, uint16_t spi_mosi, uint32_t spi_bus, uint8_t spi_baud_rate, uint8_t spi_cpol, uint8_t spi_cpha, uint8_t spi_msb){
+void spi_init(enum rcc_periph_clken spi_rcc_port, uint32_t spi_gpio_port, uint16_t spi_sck, uint16_t spi_miso, uint16_t spi_mosi, uint32_t spi_bus, uint8_t spi_baud_rate, uint8_t spi_cpol, uint8_t spi_cpha, uint8_t spi_msb, uint16_t spi_data_size){
 
 	// enable clocks for peripheral ports
 	rcc_periph_clock_enable(spi_rcc_port);
@@ -34,6 +34,8 @@ void spi_init(enum rcc_periph_clken spi_rcc_port, uint32_t spi_gpio_port, uint16
 
 	// setting nss high is very important, even if gpio is controlled manually this bit needs to be at least set to 1, otherwise the spi peripheral will not send any data out
 	spi_set_nss_high(spi_bus);
+
+	spi_set_data_size(spi_bus, spi_data_size);
 
 	// enable the peripheral
 	spi_enable(spi_bus);

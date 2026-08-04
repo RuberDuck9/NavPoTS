@@ -16125,7 +16125,7 @@
 	)
 	(global_label "USART3_RX"
 		(shape input)
-		(at 293.37 173.99 180)
+		(at 255.27 171.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -16136,7 +16136,7 @@
 		)
 		(uuid "1a59e94a-2f88-458c-9318-53611996af9c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 279.862 173.99 0)
+			(at 241.762 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17171,7 +17171,7 @@
 	)
 	(global_label "USART3_TX"
 		(shape input)
-		(at 255.27 171.45 180)
+		(at 293.37 173.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -17182,7 +17182,7 @@
 		)
 		(uuid "648d8ac8-f18d-4849-ba24-3c0d82d6d62b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.0644 171.45 0)
+			(at 280.1644 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

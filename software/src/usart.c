@@ -1,10 +1,10 @@
 #include "usart.h"
 
-void usart_init(enum rcc_periph_clken usart_rcc_port, uint32_t usart_gpio_port, uint16_t usart_rx, uint16_t usart_tx, uint32_t usart_bus, uint8_t usart_baud_rate, uint8_t usart_mode){
+void usart_init(enum rcc_periph_clken usart_rcc_port, enum rcc_periph_clken usart_rcc_bus, uint32_t usart_gpio_port, uint16_t usart_rx, uint16_t usart_tx, uint32_t usart_bus, uint32_t usart_baud_rate, uint8_t usart_mode){
 
 	// enable closk for the peripheral ports
 	rcc_periph_clock_enable(usart_rcc_port);
-	rcc_periph_clock_enable(usart_bus);
+	rcc_periph_clock_enable(usart_rcc_bus);
 
 	// configure tx rx 
 	gpio_mode_setup(
@@ -30,16 +30,16 @@ void usart_init(enum rcc_periph_clken usart_rcc_port, uint32_t usart_gpio_port, 
 	usart_enable(usart_bus);
 }
 
-void usart_print(char *buffer){
+void usart_print(uint32_t usart_bus, char *buffer){
 
 	while (*buffer){
-		usart_send_blocking(USART1, *buffer);
+		usart_send_blocking(usart_bus, *buffer);
 		buffer++;
 	}
 }
 
-void usart_println(char *buffer){
+void usart_println(uint32_t usart_bus, char *buffer){
 
-	usart_print(buffer);
-	usart_print("\r\n");
+	usart_print(usart_bus, buffer);
+	usart_print(usart_bus, "\r\n");
 }
