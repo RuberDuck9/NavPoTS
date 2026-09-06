@@ -10162,6 +10162,26 @@
 		)
 		(uuid "0b43ccc0-e875-42bf-8292-1da208a07e9e")
 	)
+	(text "TIM2_CH2\n"
+		(exclude_from_sim no)
+		(at 214.884 82.804 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1037b877-e107-4b8b-a1c2-3d396302e33e")
+	)
+	(text "TIM3_CH1"
+		(exclude_from_sim no)
+		(at 214.63 95.504 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "14fbe5e9-0b0b-4520-a6ff-5ebad2ef04b9")
+	)
 	(text "MAGNETOMETER"
 		(exclude_from_sim no)
 		(at 323.342 93.726 0)
@@ -10261,6 +10281,16 @@
 		)
 		(uuid "9241c8d4-633a-4767-a48f-c5af3f5a45f8")
 	)
+	(text "TIM2_CH4"
+		(exclude_from_sim no)
+		(at 214.884 87.884 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b0c17c5e-9c25-4d33-b1a6-360a69a9d689")
+	)
 	(text "MOUNTING HOLES"
 		(exclude_from_sim no)
 		(at 256.286 247.396 0)
@@ -10283,6 +10313,16 @@
 		)
 		(uuid "b56299ac-27fb-4ef4-bc83-d1b66472e469")
 	)
+	(text "TIM2_CH1"
+		(exclude_from_sim no)
+		(at 214.884 80.264 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b970f014-b501-41d5-b459-1760ac657691")
+	)
 	(text "DEBUG\n"
 		(exclude_from_sim no)
 		(at 245.872 202.946 0)
@@ -10294,6 +10334,16 @@
 		)
 		(uuid "c0ce98aa-ad49-4d45-b2ec-90e299ad90a1")
 	)
+	(text "TIM3_CH3"
+		(exclude_from_sim no)
+		(at 215.9 123.444 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c481e91d-e44b-46ab-bad2-6572f03f325f")
+	)
 	(text "SOUTH BOARD"
 		(exclude_from_sim no)
 		(at 322.326 157.734 0)
@@ -10304,6 +10354,36 @@
 			)
 		)
 		(uuid "da572846-aeec-4f7c-8e32-9caf66501d6a")
+	)
+	(text "TIM3_CH4"
+		(exclude_from_sim no)
+		(at 215.9 125.984 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "daf03505-5467-4c3d-9d3b-af668c07740f")
+	)
+	(text "TIM2_CH3"
+		(exclude_from_sim no)
+		(at 214.884 85.344 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "de77fb1f-6fdd-47fe-84b8-836945df5399")
+	)
+	(text "TIM3_CH2"
+		(exclude_from_sim no)
+		(at 214.63 98.044 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e58241f8-4340-4429-a331-d44700bd7548")
 	)
 	(junction
 		(at 201.93 57.15)
