@@ -1,0 +1,19 @@
+#ifndef ASM330LHHXTR_H
+#define ASM330LHHXTR_H
+
+#include "spi.h"
+
+#define ASM330LHHXTR_SPI_BUS hspi3
+
+#define ASM330LHHXTR_CS_GPIO_PORT GPIOD
+#define ASM330LHHXTR_CS_PIN GPIO_PIN_1
+
+#define ASM330LHHXTR_READ_BIT 0x80
+
+#define ASM330LHHXTR_WHO_AM_I_REGISTER 0x0F
+#define ASM330LHHXTR_WHO_AM_I_VALUE 0x6B
+
+HAL_StatusTypeDef ASM330LHXXTR_ReadRegister(uint8_t REGISTER_ADDRESS, uint8_t *data, uint16_t length);
+HAL_StatusTypeDef ASM330LHXXTR_Verify(void);
+
+#endif
