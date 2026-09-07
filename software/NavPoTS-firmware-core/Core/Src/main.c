@@ -109,7 +109,14 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+  if (ASM330LHXXTR_Verify() == HAL_OK)
+  {
+	  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_SET);
+  }
+  else
+  {
+	  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_RESET);
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -119,16 +126,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	 if (ASM330LHXXTR_Verify() == HAL_OK)
-	 {
-		 HAL_GPIO_WritePin(GPIOE, GPIO_PIN_14, GPIO_PIN_SET);
-		 HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_SET);
-	 }
-	 else
-	 {
-		 HAL_GPIO_WritePin(GPIOE, GPIO_PIN_14, GPIO_PIN_RESET);
-		 HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_RESET);
-	 }
   }
   /* USER CODE END 3 */
 }
@@ -224,7 +221,15 @@ void PeriphCommonClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_RCC_CSSCallback(void)
+{
+	//printf("CSS Callback Triggered!");
+	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_14, GPIO_PIN_SET);
+	while(1)
+	{
 
+	}
+}
 /* USER CODE END 4 */
 
  /* MPU Configuration */
