@@ -51,6 +51,7 @@
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/ASM330LHHXTR"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/H3LIS331DL"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/MMC5983MA"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1166036801" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -133,6 +134,7 @@
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/ASM330LHHXTR"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/H3LIS331DL"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/MMC5983MA"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1935900077" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

@@ -14,6 +14,7 @@
 "./Core/Startup/startup_stm32h743zitx.o"
 "./Drivers/BSP/ASM330LHHXTR/ASM330LHHXTR.o"
 "./Drivers/BSP/H3LIS331DL/H3LIS331DL.o"
+"./Drivers/BSP/MMC5983MA/MMC5983MA.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_adc_ex.o"

@@ -26,5 +26,6 @@ Core/Src \
 Core/Startup \
 Drivers/BSP/ASM330LHHXTR \
 Drivers/BSP/H3LIS331DL \
+Drivers/BSP/MMC5983MA \
 Drivers/STM32H7xx_HAL_Driver/Src \
 

@@ -30,6 +30,7 @@
 #include <stdio.h>
 #include "ASM330LHHXTR.h"
 #include "H3LIS331DL.h"
+#include "MMC5983MA.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -113,11 +114,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ASM330LHHXTR_Data data;
 
-  ASM330LHHXTR_Verify();
-  HAL_Delay(250);
-  ASM330LHHXTR_Init();
-  HAL_Delay(250);
-  H3LIS331DL_Verify();
+//  ASM330LHHXTR_Verify();
+//  HAL_Delay(250);
+//  ASM330LHHXTR_Init();
+//  HAL_Delay(250);
+  MMC5983MA_Verify();
   HAL_Delay(250);
 
   /* USER CODE END 2 */
@@ -129,9 +130,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	ASM330LHHXTR_ReadData(&data);
+//	ASM330LHHXTR_ReadData(&data);
+//	printf("temp %f, gx %f, gy %f, gz %f, ax %f, ay %f, az %f\r\n", data.temp, data.gx, data.gy, data.gz, data.ax, data.ay, data.az);
+	HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_14);
 	HAL_Delay(50);
-	printf("temp %f, gx %f, gy %f, gz %f, ax %f, ay %f, az %f\r\n", data.temp, data.gx, data.gy, data.gz, data.ax, data.ay, data.az);
   }
   /* USER CODE END 3 */
 }
