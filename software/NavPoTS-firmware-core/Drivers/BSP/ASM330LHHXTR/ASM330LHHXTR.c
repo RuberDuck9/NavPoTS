@@ -24,42 +24,50 @@ static inline HAL_StatusTypeDef ASM330LHHXTR_ConfigureSpi(void)
 HAL_StatusTypeDef ASM330LHHXTR_ReadRegister(uint8_t REGISTER_ADDRESS, uint8_t *data, uint16_t length)
 {
 	uint8_t tx_address = REGISTER_ADDRESS | ASM330LHHXTR_READ_BIT;
-
 	HAL_StatusTypeDef spi_status;
 
 	spi_status = ASM330LHHXTR_ConfigureSpi();
+	if (spi_status != HAL_OK) return spi_status;
 
 	ASM330LHHXTR_CS_Low();
 
-	if (spi_status == HAL_OK)
-	{
-		spi_status = HAL_SPI_Transmit(&hspi3, &tx_address, 1, HAL_MAX_DELAY);
-	}
-	else
-	{
-		return spi_status;
-	}
+	spi_status = HAL_SPI_Transmit(&ASM330LHHXTR_SPI_BUS, &tx_address, 1, HAL_MAX_DELAY);
+	if (spi_status != HAL_OK) return spi_status;
 
-	if (spi_status == HAL_OK)
-	{
-		spi_status = HAL_SPI_Receive(&hspi3, data, length, HAL_MAX_DELAY);
-	}
-	else
-	{
-		return spi_status;
-	}
+	spi_status = HAL_SPI_Receive(&ASM330LHHXTR_SPI_BUS, data, length, HAL_MAX_DELAY);
+	if (spi_status != HAL_OK) return spi_status;
 
 	ASM330LHHXTR_CS_High();
 
 	return spi_status;
 }
 
-HAL_StatusTypeDef ASM330LHXXTR_Verify(void)
+HAL_StatusTypeDef ASM330LHHXTR_WriteRegister(uint8_t REGISTER_ADDRESS, uint8_t value)
+{
+	uint8_t tx_data[2] = { REGISTER_ADDRESS & ASM330LHHXTR_WRITE_BIT, value };
+	HAL_StatusTypeDef spi_status;
+
+	spi_status = ASM330LHHXTR_ConfigureSpi();
+	if (spi_status != HAL_OK) return spi_status;
+
+	ASM330LHHXTR_CS_Low();
+
+	spi_status = HAL_SPI_Transmit(&ASM330LHHXTR_SPI_BUS, tx_data, 2, HAL_MAX_DELAY);
+	if (spi_status != HAL_OK) return spi_status;
+
+	ASM330LHHXTR_CS_High();
+
+	return spi_status;
+}
+
+HAL_StatusTypeDef ASM330LHHXTR_Verify(void)
 {
 	uint8_t chip_id;
-	HAL_StatusTypeDef chip_status = ASM330LHHXTR_ReadRegister(ASM330LHHXTR_WHO_AM_I_REGISTER, &chip_id, 1);
+	HAL_StatusTypeDef spi_status;
 
-	if (chip_status == HAL_OK)
+	spi_status = ASM330LHHXTR_ReadRegister(ASM330LHHXTR_WHO_AM_I, &chip_id, 1);
+
+	if (spi_status == HAL_OK)
 	{
 		if (chip_id == ASM330LHHXTR_WHO_AM_I_VALUE)
 		{
@@ -71,8 +79,67 @@ HAL_StatusTypeDef ASM330LHXXTR_Verify(void)
 		}
 	}
 
-	return chip_status;
+	return spi_status;
 }
 
+HAL_StatusTypeDef ASM330LHHXTR_Init(void)
+{
+	HAL_StatusTypeDef spi_status;
+
+	spi_status = ASM330LHHXTR_WriteRegister(ASM330LHHXTR_CTRL1_XL, ASM330LHHXTR_CTRL1_XL_VALUE);
+	if (spi_status != HAL_OK) return spi_status;
+
+	spi_status = ASM330LHHXTR_WriteRegister(ASM330LHHXTR_CTRL2_G, ASM330LHHXTR_CTRL2_G_VALUE);
+	if (spi_status != HAL_OK) return spi_status;
+
+	spi_status = ASM330LHHXTR_WriteRegister(ASM330LHHXTR_CTRL3_C, ASM330LHHXTR_CTRL3_C_VALUE);
+
+	return spi_status;
+}
+
+HAL_StatusTypeDef ASM330LHHXTR_ReadData(ASM330LHHXTR_Data *data)
+{
+	uint8_t ASM330LHHXTR_status;
+	uint8_t rx_buffer[14];
+	HAL_StatusTypeDef spi_status;
+	int16_t raw_rx;
+
+	spi_status = ASM330LHHXTR_ReadRegister(ASM330LHHXTR_STATUS_REG, &ASM330LHHXTR_status, 1);
+	if (spi_status != HAL_OK) return spi_status;
+
+	spi_status = ASM330LHHXTR_ReadRegister(ASM330LHHXTR_OUT_TEMP_L, rx_buffer, 14);
+	if (spi_status != HAL_OK) return spi_status;
+
+	if ( (ASM330LHHXTR_status & ASM330LHHXTR_STATUS_REG_TEMP_READY) != 0) // check if there's a new measurement
+	{
+		// 256 LSB/C, 25C offset
+		raw_rx = (int16_t)(rx_buffer[1] << 8 | rx_buffer[0]);
+		data->temp = (raw_rx / 256.0f) + 25.0f;
+	}
+
+	if ( (ASM330LHHXTR_status & ASM330LHHXTR_STATUS_REG_GYRO_READY) != 0)
+	{
+		// +/- 400 dps, sensitivity 140 mdps/LSB
+		raw_rx = (int16_t)(rx_buffer[3] << 8 | rx_buffer[2]);
+		data->gx = raw_rx * 140.0f / 1000.0f;
+		raw_rx = (int16_t)(rx_buffer[5] << 8 | rx_buffer[4]);
+		data->gy = raw_rx * 140.0f / 1000.0f;
+		raw_rx = (int16_t)(rx_buffer[7] << 8 | rx_buffer[6]);
+		data->gz = raw_rx * 140.0f / 1000.0f;
+	}
+
+	if ( (ASM330LHHXTR_status & ASM330LHHXTR_STATUS_REG_ACCEL_READY) != 0)
+	{
+		// +/- 16g, sensitivity 0.488 mg/LSB
+		raw_rx = (int16_t)(rx_buffer[9] << 8 | rx_buffer[8]);
+		data->ax = raw_rx * 0.488f / 1000.0f;
+		raw_rx = (int16_t)(rx_buffer[11] << 8 | rx_buffer[10]);
+		data->ay = raw_rx * 0.488f / 1000.0f;
+		raw_rx = (int16_t)(rx_buffer[13] << 8 | rx_buffer[12]);
+		data->az = raw_rx * 0.488f / 1000.0f;
+	}
+
+	return spi_status;
+}
 
 

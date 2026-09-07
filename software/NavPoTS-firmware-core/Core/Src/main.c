@@ -27,7 +27,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
 #include "ASM330LHHXTR.h"
+#include "H3LIS331DL.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -109,14 +111,15 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  if (ASM330LHXXTR_Verify() == HAL_OK)
-  {
-	  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_SET);
-  }
-  else
-  {
-	  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_RESET);
-  }
+  ASM330LHHXTR_Data data;
+
+  ASM330LHHXTR_Verify();
+  HAL_Delay(250);
+  ASM330LHHXTR_Init();
+  HAL_Delay(250);
+  H3LIS331DL_Verify();
+  HAL_Delay(250);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -126,6 +129,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	ASM330LHHXTR_ReadData(&data);
+	HAL_Delay(50);
+	printf("temp %f, gx %f, gy %f, gz %f, ax %f, ay %f, az %f\r\n", data.temp, data.gx, data.gy, data.gz, data.ax, data.ay, data.az);
   }
   /* USER CODE END 3 */
 }
@@ -229,6 +235,12 @@ void HAL_RCC_CSSCallback(void)
 	{
 
 	}
+}
+
+int _write(int file, char *ptr, int len)
+{
+  HAL_UART_Transmit(&huart7, (uint8_t *)ptr, len, HAL_MAX_DELAY);
+  return len;
 }
 /* USER CODE END 4 */
 

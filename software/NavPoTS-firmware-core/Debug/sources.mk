@@ -25,5 +25,6 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/BSP/ASM330LHHXTR \
+Drivers/BSP/H3LIS331DL \
 Drivers/STM32H7xx_HAL_Driver/Src \
 
