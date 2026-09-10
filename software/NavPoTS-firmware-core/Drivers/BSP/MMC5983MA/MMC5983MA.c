@@ -15,9 +15,9 @@ static inline void MMC5983MA_CS_High(void)
 static inline HAL_StatusTypeDef MMC5983MA_ConfigureSpi(void)
 {
 	MMC5983MA_SPI_BUS.Init.DataSize = SPI_DATASIZE_8BIT;
-	MMC5983MA_SPI_BUS.Init.CLKPolarity = SPI_POLARITY_HIGH;
-	MMC5983MA_SPI_BUS.Init.CLKPhase = SPI_PHASE_2EDGE;
-	MMC5983MA_SPI_BUS.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
+	MMC5983MA_SPI_BUS.Init.CLKPolarity = SPI_POLARITY_LOW;
+	MMC5983MA_SPI_BUS.Init.CLKPhase = SPI_PHASE_1EDGE;
+	MMC5983MA_SPI_BUS.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
 	MMC5983MA_SPI_BUS.Init.FirstBit = SPI_FIRSTBIT_MSB;
 	return HAL_SPI_Init(&MMC5983MA_SPI_BUS);
 }
@@ -33,10 +33,11 @@ HAL_StatusTypeDef MMC5983MA_ReadRegister(uint8_t REGISTER_ADDRESS, uint8_t *data
 	MMC5983MA_CS_Low();
 
 	spi_status = HAL_SPI_Transmit(&MMC5983MA_SPI_BUS, &tx_address, 1, HAL_MAX_DELAY);
-	if (spi_status != HAL_OK) return spi_status;
 
-	spi_status = HAL_SPI_Receive(&MMC5983MA_SPI_BUS, data, length, HAL_MAX_DELAY);
-	if (spi_status != HAL_OK) return spi_status;
+	if (spi_status == HAL_OK)
+	{
+		spi_status = HAL_SPI_Receive(&MMC5983MA_SPI_BUS, data, length, HAL_MAX_DELAY);
+	}
 
 	MMC5983MA_CS_High();
 
@@ -54,7 +55,6 @@ HAL_StatusTypeDef MMC5983MA_WriteRegister(uint8_t REGISTER_ADDRESS, uint8_t valu
 	MMC5983MA_CS_Low();
 
 	spi_status = HAL_SPI_Transmit(&MMC5983MA_SPI_BUS, tx_data, 2, HAL_MAX_DELAY);
-	if (spi_status != HAL_OK) return spi_status;
 
 	MMC5983MA_CS_High();
 

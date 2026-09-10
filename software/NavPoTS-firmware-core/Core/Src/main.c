@@ -130,7 +130,6 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	ASM330LHHXTR_ReadData(&data);
 	printf("temp %f, gx %f, gy %f, gz %f, ax %f, ay %f, az %f\r\n", data.temp, data.gx, data.gy, data.gz, data.ax, data.ay, data.az);
-	HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_14);
 	HAL_Delay(150);
   }
   /* USER CODE END 3 */

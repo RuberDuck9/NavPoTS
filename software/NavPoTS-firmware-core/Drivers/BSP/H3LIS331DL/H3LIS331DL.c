@@ -16,7 +16,7 @@ static inline HAL_StatusTypeDef H3LIS331DL_ConfigureSpi(void)
 	H3LIS331DL_SPI_BUS.Init.DataSize = SPI_DATASIZE_8BIT;
 	H3LIS331DL_SPI_BUS.Init.CLKPolarity = SPI_POLARITY_HIGH;
 	H3LIS331DL_SPI_BUS.Init.CLKPhase = SPI_PHASE_2EDGE;
-	H3LIS331DL_SPI_BUS.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
+	H3LIS331DL_SPI_BUS.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
 	H3LIS331DL_SPI_BUS.Init.FirstBit = SPI_FIRSTBIT_MSB;
 	return HAL_SPI_Init(&H3LIS331DL_SPI_BUS);
 }
@@ -32,10 +32,11 @@ HAL_StatusTypeDef H3LIS331DL_ReadRegister(uint8_t REGISTER_ADDRESS, uint8_t *dat
 	H3LIS331DL_CS_Low();
 
 	spi_status = HAL_SPI_Transmit(&H3LIS331DL_SPI_BUS, &tx_address, 1, HAL_MAX_DELAY);
-	if (spi_status != HAL_OK) return spi_status;
 
-	spi_status = HAL_SPI_Receive(&H3LIS331DL_SPI_BUS, data, length, HAL_MAX_DELAY);
-	if (spi_status != HAL_OK) return spi_status;
+	if (spi_status == HAL_OK)
+	{
+		spi_status = HAL_SPI_Receive(&H3LIS331DL_SPI_BUS, data, length, HAL_MAX_DELAY);
+	}
 
 	H3LIS331DL_CS_High();
 
@@ -53,7 +54,6 @@ HAL_StatusTypeDef H3LIS331DL_WriteRegister(uint8_t REGISTER_ADDRESS, uint8_t val
 	H3LIS331DL_CS_Low();
 
 	spi_status = HAL_SPI_Transmit(&H3LIS331DL_SPI_BUS, tx_data, 2, HAL_MAX_DELAY);
-	if (spi_status != HAL_OK) return spi_status;
 
 	H3LIS331DL_CS_High();
 
